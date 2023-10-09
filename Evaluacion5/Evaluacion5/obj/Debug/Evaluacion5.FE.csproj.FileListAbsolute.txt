@@ -1,0 +1,13 @@
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.FE.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.Form1.resources
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.Properties.Resources.resources
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.FE.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.FE.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\bin\Debug\Evaluacion5.exe.config
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\bin\Debug\Evaluacion5.exe
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\bin\Debug\Evaluacion5.pdb
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\bin\Debug\Evaluacion5.BE.dll
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\bin\Debug\Evaluacion5.BE.pdb
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.FE.csproj.CopyComplete
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.exe
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5\obj\Debug\Evaluacion5.pdb

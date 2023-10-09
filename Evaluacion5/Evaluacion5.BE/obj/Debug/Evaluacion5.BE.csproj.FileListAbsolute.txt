@@ -1,0 +1,6 @@
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\obj\Debug\Evaluacion5.BE.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\obj\Debug\Evaluacion5.BE.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\bin\Debug\Evaluacion5.BE.dll
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\bin\Debug\Evaluacion5.BE.pdb
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\obj\Debug\Evaluacion5.BE.dll
+C:\Users\Usuario\Desktop\PROGRAMACION I\Evaluacion5\Evaluacion5.BE\obj\Debug\Evaluacion5.BE.pdb
