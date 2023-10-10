@@ -17,10 +17,16 @@ namespace Evaluacion5
     public partial class Form1 : Form
     {
         public bool isGreen = true; // Variable para alternar el color
+
+        Recomendacion Lista { get; set; } = new Recomendacion();
         public Form1()
         {
             InitializeComponent();
             btnInscribirse.Hide();
+
+          
+            dg.DataSource = Lista.ListaRecomendacion;
+            
 
         }
 
@@ -39,6 +45,11 @@ namespace Evaluacion5
             
 
             lblRecomendacion.Text = recomendacion.ObtenerRecomendacion();
+
+            Recomendacion rec = new Recomendacion();
+            
+
+            
 
             while (isGreen)
             {
@@ -67,7 +78,14 @@ namespace Evaluacion5
 
         private void btnInscribirse_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Inscripción realizada con éxito");                
+            MessageBox.Show("Inscripción realizada con éxito");
+            Recomendacion rec = new Recomendacion();
+            rec.Agregar(cmbAreaInteres.Text,
+                        cmbNivelDificultad.Text,
+                        lblVacante.Text);
+            Lista.InsertRecomendacion(rec);
         }
+
+        
     }
 }

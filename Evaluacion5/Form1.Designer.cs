@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblNivelDificultad = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
             this.cmbNivelDificultad = new System.Windows.Forms.ComboBox();
@@ -38,6 +39,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblVacante = new System.Windows.Forms.Label();
             this.btnInscribirse = new System.Windows.Forms.Button();
+            this.dg = new System.Windows.Forms.DataGridView();
+            this.areaInteresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivelDificultadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vacanteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recomendacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recomendacionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNivelDificultad
@@ -147,11 +155,57 @@
             this.btnInscribirse.UseVisualStyleBackColor = true;
             this.btnInscribirse.Click += new System.EventHandler(this.btnInscribirse_Click);
             // 
+            // dg
+            // 
+            this.dg.AutoGenerateColumns = false;
+            this.dg.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.areaInteresDataGridViewTextBoxColumn,
+            this.nivelDificultadDataGridViewTextBoxColumn,
+            this.vacanteDataGridViewTextBoxColumn});
+            this.dg.DataSource = this.recomendacionBindingSource;
+            this.dg.Location = new System.Drawing.Point(782, 44);
+            this.dg.Name = "dg";
+            this.dg.RowHeadersWidth = 51;
+            this.dg.RowTemplate.Height = 24;
+            this.dg.Size = new System.Drawing.Size(627, 258);
+            this.dg.TabIndex = 24;
+            // 
+            // areaInteresDataGridViewTextBoxColumn
+            // 
+            this.areaInteresDataGridViewTextBoxColumn.DataPropertyName = "areaInteres";
+            this.areaInteresDataGridViewTextBoxColumn.HeaderText = "areaInteres";
+            this.areaInteresDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.areaInteresDataGridViewTextBoxColumn.Name = "areaInteresDataGridViewTextBoxColumn";
+            this.areaInteresDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nivelDificultadDataGridViewTextBoxColumn
+            // 
+            this.nivelDificultadDataGridViewTextBoxColumn.DataPropertyName = "nivelDificultad";
+            this.nivelDificultadDataGridViewTextBoxColumn.HeaderText = "nivelDificultad";
+            this.nivelDificultadDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nivelDificultadDataGridViewTextBoxColumn.Name = "nivelDificultadDataGridViewTextBoxColumn";
+            this.nivelDificultadDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // vacanteDataGridViewTextBoxColumn
+            // 
+            this.vacanteDataGridViewTextBoxColumn.DataPropertyName = "vacante";
+            this.vacanteDataGridViewTextBoxColumn.HeaderText = "vacante";
+            this.vacanteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.vacanteDataGridViewTextBoxColumn.Name = "vacanteDataGridViewTextBoxColumn";
+            this.vacanteDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // recomendacionBindingSource
+            // 
+            this.recomendacionBindingSource.DataSource = typeof(Evaluacion5.BE.Recomendacion);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1499, 728);
+            this.Controls.Add(this.dg);
             this.Controls.Add(this.btnInscribirse);
             this.Controls.Add(this.lblVacante);
             this.Controls.Add(this.panel1);
@@ -164,6 +218,8 @@
             this.Controls.Add(this.btnTomarDecision);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recomendacionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +237,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblVacante;
         private System.Windows.Forms.Button btnInscribirse;
+        private System.Windows.Forms.DataGridView dg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn areaInteresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nivelDificultadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vacanteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource recomendacionBindingSource;
     }
 }
 

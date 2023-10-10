@@ -1,28 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Evaluacion5.BE
 {
+    
     public class Recomendacion
 
     {
-        public string areaInteres { get; set; }
+        public DataTable ListaRecomendacion { get; set; } = new DataTable();
+    
+        public Recomendacion()
+        {
+            ListaRecomendacion.TableName = "ListaCursos";
+            ListaRecomendacion.Columns.Add("areaInteres");
+            ListaRecomendacion.Columns.Add("nivelDificultad");
+            ListaRecomendacion.Columns.Add("Vacante");
+           
+            LeerArchivo();
+        }
+    public void LeerArchivo()
+    {
+        if (System.IO.File.Exists("Recomendacion.xml"))
+        {
+            ListaRecomendacion.ReadXml("Recomendacion.xml");
+        }
+    }
+
+    public void InsertRecomendacion(Recomendacion aRecomendacion)
+    {
+
+        ListaRecomendacion.Rows.Add(); //agrego renglon vacio
+        int NuevoRenglon = ListaRecomendacion.Rows.Count - 1;
+        ListaRecomendacion.Rows[NuevoRenglon]["areaInteres"] = aRecomendacion.areaInteres;
+        ListaRecomendacion.Rows[NuevoRenglon]["nivelDificultad"] = aRecomendacion.nivelDificultad;
+        ListaRecomendacion.Rows[NuevoRenglon]["vacante"] = aRecomendacion.vacante;
+        
+
+        ListaRecomendacion.WriteXml("Personas.xml");
+    }
+
+
+    public string areaInteres { get; set; }
 
         public string nivelDificultad { get; set; }
 
         public string vacante { get; set; }
        
-       
-
-        
-
+      
         public string ObtenerRecomendacion()
         {
             string recomendacion = areaInteres + nivelDificultad;
             
+
 
 
             if (areaInteres == "Matematicas" && nivelDificultad == "Facil")
@@ -77,8 +110,18 @@ namespace Evaluacion5.BE
         
 
     }
+        public void Agregar(string aareaInteres,
+                             string anivelDificultad,
+                             string aVacante)
+        {
+            areaInteres = aareaInteres;
+            nivelDificultad = anivelDificultad;
+            vacante = aVacante;
+        }
 
-        
-}
+
+
+
+    }
 }
 
