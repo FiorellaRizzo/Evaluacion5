@@ -35,6 +35,9 @@
             this.btnTomarDecision = new System.Windows.Forms.Button();
             this.lblRecomendacion = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblVacante = new System.Windows.Forms.Label();
+            this.btnInscribirse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNivelDificultad
@@ -118,11 +121,40 @@
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Cursos gratuitos Instituto Cervantes";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(419, 314);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(22, 22);
+            this.panel1.TabIndex = 21;
+            // 
+            // lblVacante
+            // 
+            this.lblVacante.AutoSize = true;
+            this.lblVacante.Location = new System.Drawing.Point(50, 350);
+            this.lblVacante.Name = "lblVacante";
+            this.lblVacante.Size = new System.Drawing.Size(329, 16);
+            this.lblVacante.TabIndex = 22;
+            this.lblVacante.Text = "Esperando recomendación para determinar vacante...";
+            // 
+            // btnInscribirse
+            // 
+            this.btnInscribirse.Location = new System.Drawing.Point(386, 342);
+            this.btnInscribirse.Name = "btnInscribirse";
+            this.btnInscribirse.Size = new System.Drawing.Size(84, 23);
+            this.btnInscribirse.TabIndex = 23;
+            this.btnInscribirse.Text = "Inscribirse";
+            this.btnInscribirse.UseVisualStyleBackColor = true;
+            this.btnInscribirse.Click += new System.EventHandler(this.btnInscribirse_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInscribirse);
+            this.Controls.Add(this.lblVacante);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblRecomendacion);
             this.Controls.Add(this.lblNivelDificultad);
@@ -146,6 +178,9 @@
         private System.Windows.Forms.Button btnTomarDecision;
         private System.Windows.Forms.Label lblRecomendacion;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblVacante;
+        private System.Windows.Forms.Button btnInscribirse;
     }
 }
 

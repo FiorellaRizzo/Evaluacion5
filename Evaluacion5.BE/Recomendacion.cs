@@ -13,24 +13,28 @@ namespace Evaluacion5.BE
 
         public string nivelDificultad { get; set; }
 
-        //public string recomendacion = ObtenerRecomendacion(string areaInteres,string nivelDificultad);
+        public string vacante { get; set; }
+       
+       
+
+        
+
         public string ObtenerRecomendacion()
         {
             string recomendacion = areaInteres + nivelDificultad;
+            
 
-            if (areaInteres == "Matemáticas" && nivelDificultad == "Fácil")
+
+            if (areaInteres == "Matematicas" && nivelDificultad == "Facil")
             {
+                
                 return "Te recomendamos el curso de Introducción a las Matemáticas.";
             }
-            else if (areaInteres == "Matemáticas" && nivelDificultad == "Intermedio")
+            else if (areaInteres == "Matematicas" && nivelDificultad == "Intermedio")
             {
                 return "Te recomendamos el curso de Matemáticas Avanzadas I";
             }
-            else if (areaInteres == "Matemáticas" && nivelDificultad == "Avanzado")
-            {
-                return "Te recomendamos el curso de Matemáticas Avanzadas II";
-            }
-            else if (areaInteres == "Ciencias Sociales" && nivelDificultad == "Fácil")
+            else if (areaInteres == "Ciencias Sociales" && nivelDificultad == "Facil")
             {
                 return "Te recomendamos el curso Introductorio a las disciplinas fundamentales de Ciencias Sociales.";
             }
@@ -42,7 +46,7 @@ namespace Evaluacion5.BE
             {
                 return "Te recomendamos el curso de Historia de la Cultura y la Civilización.";
             }
-            else if (areaInteres == "Arte" && nivelDificultad == "Fácil")
+            else if (areaInteres == "Arte" && nivelDificultad == "Facil")
             {
                 return "Te recomendamos el curso de Introduccion a Las bellas artes.";
             }
@@ -54,15 +58,15 @@ namespace Evaluacion5.BE
             {
                 return "Te recomendamos el curso de Pintura Expresionista.";
             }
-            else if (areaInteres == "Programación" && nivelDificultad == "Facil")
+            else if (areaInteres == "Programacion" && nivelDificultad == "Facil")
             {
                 return "Te recomendamos el curso de Introduccion a la Programación con pseudocodigo.";
             }
-            else if (areaInteres == "Programación" && nivelDificultad == "Intermedio")
+            else if (areaInteres == "Programacion" && nivelDificultad == "Intermedio")
             {
                 return "Te recomendamos el curso de Desarrollo Web con C#.";
             }
-            else if (areaInteres == "Programación" && nivelDificultad == "Avanzado")
+            else if (areaInteres == "Programacion" && nivelDificultad == "Avanzado")
             {
                 return "Te recomendamos el curso de Paradigmas de la programación.";
             }
@@ -73,5 +77,9 @@ namespace Evaluacion5.BE
         
 
     }
+
+        
 }
+}
+
 }
